@@ -61,6 +61,22 @@
           >
           </a-entity>
       </a-nft>
+
+      <a-nft
+      type = "nft"
+      url = "\aframe_webAR\photo\photo"
+      smooth = "true"
+      smoothCount = "10"
+      smoothTolerence = ".01"
+      smoothThreshold = "5">
+      <a-entity
+      gltf-model = "./models/Mixer.glb"
+      scale = "500 500 500"
+      position = "100 100 0"
+      ></a-entity>
+      </a-nft>
+
+
       <!-- static camera that moves according to the device movemenents -->
       <a-entity camera></a-entity>
     </a-scene>
