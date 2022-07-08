@@ -68,7 +68,13 @@
             <video src="mov_bbb.mp4"
                 preload="auto" id="vid" response-type="arraybuffer" loop
                 crossorigin webkit-playsinline autoplay muted playsinline>
-            </video>
+            </video
+            src = "https://youtu.be/PAZzseVN_g0"
+            preload = "auto" id="vid2" response-type="arraybuffer" loop
+            crossorigin  webkit-playsinline autoplay muted playsinline
+            >
+            <video
+            ></video>
         </a-assets>
 
         <a-nft
@@ -85,6 +91,25 @@
                 >
             </a-video>
         </a-nft>
+
+        <!-- Video 2 for 2nd marker -->
+
+        <a-nft
+            videohandler
+            type='nft' url='\aframe_webAR\trex\trex'
+            smooth="true" smoothCount="10" smoothTolerance="0.01" smoothThreshold="5"
+        >
+            <a-video
+                src="#vid2"
+                position='50 150 -100'
+                rotation='90 0 180'
+                width='300'
+                height='175'
+                >
+            </a-video>
+        </a-nft>
+
+
 		<a-entity camera></a-entity>
 	</a-scene>
 </body>
